@@ -1,0 +1,56 @@
+* {
+    /* font-family: 'Comic Sans MS', 'Comic Sans', cursive; */
+    font-family: 'Play', sans-serif;
+
+}
+
+#logo {
+    font-family: 'Carter One', sans-serif;
+}
+
+.content-container {
+    width: 70%;
+    margin: auto;
+}
+
+body {
+    font-size: 0.8em;
+}
+
+.table-row:hover {
+    background-color: #95BCF2 !important;
+}
+
+table {
+    margin: auto;
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+.nav-link {
+    background-color: #CCCCCC !important;
+}
+
+.nav-link.active {
+    background-color: #B6D7A8;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.table-responsive {
+    overflow-y: auto;
+    /* max-height: 300px; */
+}
