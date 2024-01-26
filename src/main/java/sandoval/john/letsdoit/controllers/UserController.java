@@ -26,19 +26,22 @@ public class UserController {
     public String index(Model model) { // Bind empty User and LoginUser objects to the JSP to capture the form input
         model.addAttribute("newUser", new User());
         model.addAttribute("newLogin", new LoginCheck());
-        return "UserAuth";
+        // return "UserAuth";
+        return "userAuth";
     }
 
-    @PostMapping("/register") // Action method of the register form
-    public String register(@Valid @ModelAttribute User newUser, BindingResult result, Model model,
-            HttpSession session) {
+    @PostMapping("/register")
+    public String register(@Valid @ModelAttribute User newUser, BindingResult result, Model model, HttpSession session) {
         User user = userService.register(newUser, result);
-        if (result.hasErrors()) { // ! If errors are found, redirect to the index page and display form errors
+        // Print all errors to the console
+        System.out.println("Errors: " + result.getAllErrors());
+        if (result.hasErrors()) {
+            model.addAttribute("newUser", newUser);
             model.addAttribute("newLogin", new LoginCheck());
-            return "UserAuth";
-        } else { // * No errors!
-            session.setAttribute("userId", user.getId()); // Store their ID from the DB in session,
-            session.setAttribute("user", user); // in other words, log them in.
+            return "userAuth";
+        } else {
+            session.setAttribute("userId", user.getId());
+            session.setAttribute("user", user);
             return "redirect:/home";
         }
     }
@@ -50,7 +53,7 @@ public class UserController {
         if (result.hasErrors() || user == null) { // ! If errors are found, OR user is equal to null, direct to the
                                                   // index page and display form errors
             model.addAttribute("newUser", new User());
-            return "UserAuth";
+            return "index";
         } else { // * No errors!
             session.setAttribute("userId", user.getId());
             session.setAttribute("user", user); // Store their ID from the DB in session, in other words, log them in.
