@@ -26,8 +26,7 @@ public class UserController {
     public String index(Model model) { // Bind empty User and LoginUser objects to the JSP to capture the form input
         model.addAttribute("newUser", new User());
         model.addAttribute("newLogin", new LoginCheck());
-        // return "UserAuth";
-        return "userAuth";
+        return "UserAuth";
     }
 
     @PostMapping("/register")
@@ -38,7 +37,7 @@ public class UserController {
         if (result.hasErrors()) {
             model.addAttribute("newUser", newUser);
             model.addAttribute("newLogin", new LoginCheck());
-            return "userAuth";
+            return "UserAuth";
         } else {
             session.setAttribute("userId", user.getId());
             session.setAttribute("user", user);
