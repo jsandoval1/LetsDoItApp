@@ -11,6 +11,7 @@
 	<groupId>sandoval.john</groupId>
 	<artifactId>letsdoit</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>letsdoit</name>
 	<description>Lets Do IT project</description>
 	<properties>
@@ -18,12 +19,6 @@
 		<maven.compiler.target>17</maven.compiler.target>
 	</properties>
 	<dependencies>
-		<!-- Trying to set up Thymeleaf -->
-		<!-- <dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-		</dependency> -->
-		<!-- Close Thymeleaf -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
