@@ -30,7 +30,19 @@
                         </header>
 
                         <!-- Forms -->
+                        <div style="background-color: white; text-align: center; margin: 0 auto; width: 25%;">
+                            <p>
+                                You can use:
+                                <br>
+                                <b>email: j@s.com</b>
+                                <br>
+                                <b>password: password</b>
+                                <br>
+                                to login for demo purposes!
+                            </p>
+                        </div>
                         <div class="d-flex justify-content-center">
+
 
                             <!-- Login Form -->
                             <div class="card mx-5" style="background-color: #999999;">
