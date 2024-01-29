@@ -1,8 +1,14 @@
-<div align="center">
+<table>
+    <tr>
+        <td><img src="assets/LetsDoItSquare.png" alt="Logo" width="200"></td>
+        <td>
+            <h2><a href="http://letsdoit-app.com/">LetsDoIt</a></h2>
+            LetsDoIt is a task management application that allows users to create, manage, and track their tasks. It also provides a social platform where users can post tasks publicly, receive comments and likes, and connect with other users.
+        </td>
+    </tr>
+</table>
 
-*<h1 style="font-family: Arial, sans-serif;">LetsDoItApp*</h1>
 
-</div>
 
 ## Table of Contents
 
@@ -100,7 +106,6 @@ This was a game-changer. It was like having a vigilant sentinel standing guard o
 The application was deployed using a variety of technologies across different categories:
 
 #### Cloud Services (AWS)
-<p align="center">
 
 | Service | Usage |
 | --- | --- |
@@ -111,7 +116,6 @@ The application was deployed using a variety of technologies across different ca
 | **Security Groups** | Used for controlling inbound and outbound traffic |
 | **CloudWatch** | Used for monitoring the application and setting alarms |
 
-</p>
 
 #### Deployment Technology Stack
 
@@ -140,6 +144,7 @@ Updates to the application are currently handled manually. Changes are pushed to
 Currently, there are some known issues that are being worked on:
 
 - **Registration Form Validations**: The validations for the registration form are currently not working as expected. We are aware of this issue and are actively working on a fix. In the meantime, please ensure that you enter valid information when registering.
+- **Deployment Issues**: The application is currently hosted on an EC2 instance. Occasionally, the instance fails due to internal AWS issues. This is a known issue and is being worked on.
 
 #### User Feedback
 
