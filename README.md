@@ -1,6 +1,6 @@
 <table>
     <tr>
-        <td><img src="assets/LetsDoItSquare.png" alt="Logo" width="200"></td>
+        <td><img src="assets/LetsDoItSquare.png" alt="Logo" width="350"></td>
         <td>
             <h2><a href="http://letsdoit-app.com/">LetsDoIt</a></h2>
             LetsDoIt is a task management application that allows users to create, manage, and track their tasks. It also provides a social platform where users can post tasks publicly, receive comments and likes, and connect with other users.
