@@ -100,6 +100,7 @@ This was a game-changer. It was like having a vigilant sentinel standing guard o
 The application was deployed using a variety of technologies across different categories:
 
 #### Cloud Services (AWS)
+<p align="center">
 
 | Service | Usage |
 | --- | --- |
@@ -109,6 +110,8 @@ The application was deployed using a variety of technologies across different ca
 | **VPC** | Used for creating a virtual network for resources |
 | **Security Groups** | Used for controlling inbound and outbound traffic |
 | **CloudWatch** | Used for monitoring the application and setting alarms |
+
+</p>
 
 #### Deployment Technology Stack
 
@@ -140,4 +143,4 @@ Currently, there are some known issues that are being worked on:
 
 #### User Feedback
 
-User feedback is an invaluable resource for improving the application. Currently, feedback is collected through GitHub and email. To streamline this process and make it easier for users to provide feedback, a feedback form is planned for future implementation.
+User feedback is an invaluable resource for improving the application. Currently, feedback is collected through GitHub and [e-mail me](mailto:jcsandoval978@gmail.com). To streamline this process and make it easier for users to provide feedback, a feedback form is planned for future implementation.
